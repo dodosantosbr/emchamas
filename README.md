@@ -5,6 +5,9 @@ O site permite **inscrições rápidas**, **pagamento via PIX** e **envio de com
 
 ---
 
+<img width="1718" height="840" alt="image" src="https://github.com/user-attachments/assets/737dde9b-c3dd-4d2c-ba28-2d00cb5261f7" />
+
+
 ## 🧭 Índice
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Funcionalidades](#-funcionalidades)
