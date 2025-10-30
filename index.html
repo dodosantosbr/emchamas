@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Retiro Espiritual 2026 - Em Chamas. Encontro para adolescentes com adoração, ensino e comunhão. Inscreva-se já!"
+    />
+    <title>Retiro Espiritual 2026 - Em Chamas</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-left" aria-hidden="true"></div>
+    <div class="bg-right" aria-hidden="true"></div>
+
+    <header class="hero container">
+      <div class="hero-content">
+        <div class="brand-header">
+          <img
+            src="./images/logoretiro.png"
+            alt="Retiro Espiritual 26"
+            class="brand-logo"
+          />
+          <div class="brand-text">
+            <span class="eyebrow">Retiro Espiritual 2026</span>
+            <p class="brand-theme"></p>
+          </div>
+        </div>
+
+        <h1>Viva a experiência <span class="highlight">Em Chamas</span></h1>
+
+        <p class="lead">
+          Encontro para adolescentes — adoração, ensino e comunhão. Um tempo
+          para reavivar o coração e acender o propósito.
+        </p>
+
+        <ul class="meta">
+          <li class="pill">Data: 19 a 22 de Março</li>
+          <li class="pill">Local: Chácara da Quadrangular</li>
+          <li class="pill">Vagas: 160 adolescentes — Equipe apoio: 40</li>
+        </ul>
+
+        <div class="price-info">
+          <img
+            src="./images/logochamas.png"
+            alt="Tema Em Chamas"
+            class="theme-image"
+          />
+
+          <div class="price-details">
+            <h3 class="section-title">Garanta sua vaga!</h3>
+            <ul class="price-list">
+              <li>
+                <span class="label">Adolescente:</span>
+                <strong class="value">R$ 220,00</strong>
+              </li>
+              <li>
+                <span class="label">Equipe de apoio:</span>
+                <strong class="value">R$ 150,00</strong>
+                <span class="note">(com camisa)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="registration">
+          <div class="card">
+            <h2>Inscrição Rápida</h2>
+            <p class="hint">
+              Preencha nome e idade, gere referência e faça o PIX. Envie o
+              comprovante no WhatsApp informado.
+            </p>
+
+            <form id="mainForm">
+              <label for="nome">Nome completo</label>
+              <input
+                id="nome"
+                type="text"
+                placeholder="Ex: João Silva"
+                required
+              />
+
+              <label for="idade">Idade</label>
+              <input
+                id="idade"
+                type="number"
+                min="1"
+                max="120"
+                placeholder="Ex: 15"
+                required
+              />
+
+              <label for="cel">Celular (DDI+DDD+Número)</label>
+              <input id="cel" type="tel" placeholder="5591999..." required />
+
+              <label for="tipo">Valor (R$)</label>
+              <select id="tipo">
+                <option value="220">Adolescente — R$ 220,00</option>
+                <option value="150">Equipe (com camisa) — R$ 150,00</option>
+              </select>
+
+              <div class="form-actions">
+                <button class="primary" id="gerar">
+                  Gerar referência & instruções
+                </button>
+                <button type="button" class="ghost" id="limpar">Limpar</button>
+              </div>
+            </form>
+
+            <div id="resultado" class="resultado hidden">
+              <div class="pix-card">
+                <div class="pix-info">
+                  <div class="pix-dados">
+                    <span class="pix-label">Chave PIX (recebedor)</span>
+                    <span class="pix-key" id="pixKey">SUA_CHAVE_PIX_AQUI</span>
+                  </div>
+
+                  <div class="pix-valor">
+                    <span class="pix-label">Valor</span>
+                    <span class="pix-amount" id="valorShow">R$ 220,00</span>
+                  </div>
+                </div>
+
+                <p class="pix-ref">
+                  Referência:
+                  <span id="refShow" class="ref-text">IGR-0000</span>
+                </p>
+
+                <p class="hint">
+                  Faça o PIX para a chave acima. Após pagar, envie o comprovante
+                  pelo WhatsApp clicando no botão abaixo. A confirmação é
+                  manual.
+                </p>
+
+                <div class="pix-actions">
+                  <button id="whatsBtn" class="primary">
+                    Enviar comprovante por WhatsApp
+                  </button>
+                  <button id="copiarRef" class="ghost">
+                    Copiar referência
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section id="pagamento">
+          <h2>Pagamento via PIX</h2>
+          <p>Realize seu pagamento utilizando o código PIX abaixo:</p>
+
+          <button id="gerarCodigo" class="btn-gerar-codigo">
+            Gerar Código PIX
+          </button>
+
+          <textarea id="codigoPix" rows="4" cols="50" readonly></textarea>
+
+          <form id="uploadForm">
+            <label for="imageUpload" class="btn-upload">
+              Adicionar Comprovante
+            </label>
+            <input
+              type="file"
+              id="imageUpload"
+              name="image"
+              accept="image/*"
+              style="display: none"
+            />
+          </form>
+
+          <a id="whatsappButton" target="_blank" class="btn-enviar-imagem">
+            Enviar via WhatsApp
+          </a>
+        </section>
+
+        <section class="experiencia">
+          <div class="experiencia-texto">
+            <h2>🔥 Viva a experiência <span>Em Chamas</span> 🔥</h2>
+            <p>
+              Prepare-se para uma jornada transformadora que vai reacender sua
+              fé, sua energia e o propósito dentro de você. Mais do que um
+              retiro, é um encontro real com o divino — um tempo de conexão,
+              renovação e poder!
+            </p>
+            <button class="btn-experiencia" id="btn-scroll">
+              Quero viver isso!
+            </button>
+          </div>
+
+          <div class="experiencia-imagem">
+            <img
+              src="./images/coracao.png"
+              alt="Pessoas louvando no evento Em Chamas"
+            />
+          </div>
+        </section> 
+      </div>
+      <main class="fogocoracao"></main>
+    </header>
+
+    <footer>
+      <p>&copy; 2026 Retiro Em Chamas — Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
